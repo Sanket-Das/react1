@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <>
-      <div className="bg-[#2e5ab8] text-white px-6 py-3 flex justify-between items-center text-sm font-medium">
+      <div className="bg-[#1AB7BA] dark:bg-primary text-white px-6 py-3 flex justify-between items-center text-sm font-medium">
 
         <nav className="flex gap-8 items-center">
           <a href="/" className="hover:opacity-80">Home</a>
