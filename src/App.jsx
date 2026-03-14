@@ -1,13 +1,5 @@
 /* eslint-disable no-unused-vars */
 import { useState } from 'react'
-<<<<<<< HEAD
-import Header from './components/Header'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Home from './pages/Home'
-import EventsList from './pages/Events-list'
-import CauseDetails from './pages/Causes-details'
-=======
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -24,14 +16,8 @@ import BlogsList from './pages/Blogs-list';
 // import EventsDetails from './pages/Events-details';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
->>>>>>> d8c3b250931903026ffaa5a7e22b4e1a00e7c3dd
 function App() {
   return (
-<<<<<<< HEAD
-    <CauseDetails />
-    
-  )
-=======
     <Router>
       <Header />
       <Routes>
@@ -51,7 +37,6 @@ function App() {
       <Footer />
     </Router>
   );
->>>>>>> d8c3b250931903026ffaa5a7e22b4e1a00e7c3dd
 }
 
 export default App
