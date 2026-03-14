@@ -7,7 +7,7 @@ export default function Footer() {
       <section
         className="relative w-full h-[420px] flex items-center justify-center text-center"
         style={{
-          backgroundImage: "url('/images/volunteer.jpg')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1593113630400-ea4288922497')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
