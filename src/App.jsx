@@ -8,8 +8,8 @@ import Home from './pages/Home';
 import BlogsList from './pages/Blogs-list';
 // import BlogsDetails from './pages/Blogs-details';
 // import Causes from './pages/Causes';
-// import CausesList from './pages/Causes-list';
-// import CausesDetails from './pages/Causes-details';
+import CausesList from './pages/Causes-list';
+import CausesDetails from './pages/Causes-details';
 // import Contact from './pages/Contact';
 // import Events from './pages/Events';
 // import EventsList from './pages/Events-list';
@@ -27,8 +27,8 @@ function App() {
         <Route path="/blogs-list" element={<BlogsList />} />
         {/* <Route path="/blogs-details" element={<BlogsDetails />} /> */}
         {/* <Route path="/causes" element={<Causes />} /> */}
-        {/* <Route path="/causes-list" element={<CausesList />} /> */}
-        {/* <Route path="/causes-details" element={<CausesDetails />} /> */}
+        <Route path="/causes-list" element={<CausesList />} />
+        <Route path="/causes-details" element={<CausesDetails />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
         {/* <Route path="/events" element={<Events />} /> */}
         {/* <Route path="/events-list" element={<EventsList />} /> */}
