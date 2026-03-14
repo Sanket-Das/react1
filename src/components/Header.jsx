@@ -157,7 +157,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="h-[120px]"></div>
+      <div className="h-[60px]"></div>
     </>
   );
 }
