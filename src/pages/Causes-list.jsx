@@ -18,7 +18,7 @@ const causes = [
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74",
+    image: "../src/assets/sagnik.jpg",
     title: "Women Empowerment",
     description: "Supporting women through education programs."
   }
@@ -28,7 +28,7 @@ const CauseList = () => {
   return (
    <> 
     {/* <Header /> */}
-    <div className="bg-black min-h-screen text-white p-10">
+    <div className="bg-green-400 min-h-screen text-white p-10">
 
       <h1 className="text-4xl font-bold mb-10">
         Cause List
