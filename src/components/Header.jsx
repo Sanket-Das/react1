@@ -1,12 +1,14 @@
+import { Link } from 'react-router-dom';
+
 export default function Header() {
   return (
     <>
       <div className="fixed top-0 left-0 w-full z-50">
         <div className="bg-[#1AB7BA] text-white px-12 flex justify-between items-center text-sm font-medium">
           <nav className="flex gap-14 h-16 items-center">
-            <a href="/" className="ml-20 bg-black px-5 h-full flex items-center hover:opacity-80">
+            <Link to="/" className="ml-20 bg-black px-5 h-full flex items-center hover:opacity-80">
               Home
-            </a>
+            </Link>
 
             <div className="group relative">
               <div className="flex items-center gap-1 hover:opacity-80 cursor-pointer">
@@ -17,21 +19,21 @@ export default function Header() {
                 <div className="bg-black text-white rounded shadow-lg w-44">
                   <ul className="flex flex-col">
                     <li>
-                      <a
-                        href="/causes"
+                      <Link
+                        to="/causes-list"
                         className="block px-4 py-2 hover:bg-gray-700"
                       >
                         Cause list
-                      </a>
+                      </Link>
                     </li>
 
                     <li>
-                      <a
-                        href="/cause-details"
+                      <Link
+                        to="/causes-details"
                         className="block px-4 py-2 hover:bg-gray-700"
                       >
                         Cause details
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -47,21 +49,21 @@ export default function Header() {
                 <div className="bg-black text-white rounded shadow-lg w-44">
                   <ul className="flex flex-col">
                     <li>
-                      <a
-                        href="/causes"
+                      <Link
+                        to="/events-list"
                         className="block px-4 py-2 hover:bg-gray-700"
                       >
                         Event list
-                      </a>
+                      </Link>
                     </li>
 
                     <li>
-                      <a
-                        href="/cause-details"
+                      <Link
+                        to="/events-details"
                         className="block px-4 py-2 hover:bg-gray-700"
                       >
                         Event details
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -77,33 +79,33 @@ export default function Header() {
                 <div className="bg-black text-white rounded shadow-lg w-44">
                   <ul className="flex flex-col">
                     <li>
-                      <a
-                        href="/causes"
+                      <Link
+                        to="/blogs-list"
                         className="block px-4 py-2 hover:bg-gray-700 transition"
                       >
                         Blog list
-                      </a>
+                      </Link>
                     </li>
 
                     <li>
-                      <a
-                        href="/cause-details"
+                      <Link
+                        to="/blogs-details"
                         className="block px-4 py-2 hover:bg-gray-700 transition"
                       >
                         Blog details
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <a href="/contact" className="hover:opacity-80">
+            <Link to="/contact" className="hover:opacity-80">
               Contact
-            </a>
-            <a href="/docs" className="hover:opacity-80">
+            </Link>
+            {/* <Link to="/docs" className="hover:opacity-80">
               Documentation
-            </a>
+            </Link> */}
           </nav>
 
           <div className="flex items-center gap-4">
