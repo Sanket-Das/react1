@@ -10,7 +10,7 @@ import BlogsList from './pages/Blogs-list';
 // import Causes from './pages/Causes';
 import CausesList from './pages/Causes-list';
 import CausesDetails from './pages/Causes-details';
-// import Contact from './pages/Contact';
+import Contact from './pages/Contact';
 // import Events from './pages/Events';
 import EventsList from './pages/Events-list';
 import EventsDetails from './pages/Events-details';
@@ -29,7 +29,7 @@ function App() {
         {/* <Route path="/causes" element={<Causes />} /> */}
         <Route path="/causes-list" element={<CausesList />} />
         <Route path="/causes-details" element={<CausesDetails />} />
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/contact" element={<Contact />} />
         {/* <Route path="/events" element={<Events />} /> */}
         <Route path="/events-list" element={<EventsList />} />
         <Route path="/events-details" element={<EventsDetails />} />
