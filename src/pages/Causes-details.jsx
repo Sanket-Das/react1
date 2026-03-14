@@ -18,7 +18,7 @@ export default function EventDetails() {
           {/* Image */}
           <div className="rounded-lg overflow-hidden mb-8">
             <img
-              src="/event.jpg"
+              src="https://endeavor-nextjs-pro.vercel.app/images/causes/cause-1.jpg"
               alt="Fundraising Event"
               className="w-full object-cover"
             />
