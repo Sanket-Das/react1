@@ -27,7 +27,7 @@ const causes = [
 const CauseList = () => {
   return (
    <> 
-    <Header />
+    {/* <Header /> */}
     <div className="bg-black min-h-screen text-white p-10">
 
       <h1 className="text-4xl font-bold mb-10">
@@ -48,7 +48,7 @@ const CauseList = () => {
       </div>
 
     </div>
-    <Footer />
+    {/* <Footer /> */}
     </>
   )
 }

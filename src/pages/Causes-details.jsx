@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 export default function EventDetails() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
       <div className="bg-[#062c2c] min-h-screen text-white py-10 px-6">
         <div className="max-w-5xl mx-auto">
@@ -104,7 +104,7 @@ export default function EventDetails() {
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
