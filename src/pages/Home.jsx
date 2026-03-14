@@ -1,70 +1,20 @@
-import React from "react";
-import heroImage from "../assets/hero.jpg";
+// src/pages/Home.jsx
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+// import { Link } from 'react-router-dom'; // optional — remove if no routing
 
 const Home = () => {
   return (
-    <div className="bg-[#062f2c] text-white">
+    <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
 
-      {/* HERO SECTION */}
-   <section
-  className="h-[70vh] flex items-center justify-center text-center relative overflow-hidden group"
->
-  {/* Background Image */}
-  <div
-    className="absolute inset-0 bg-cover bg-center transition-transform duration-[6000ms] ease-linear group-hover:scale-110"
-    style={{
-      backgroundImage: `url(${heroImage})`,
-      filter: "brightness(1.2) contrast(1.1)"
-    }}
-  ></div>
 
-  {/* Light overlay for readability */}
-  <div className="absolute inset-0 bg-[#062f2c]/40"></div>
-
-  {/* Content */}
-  <div
-    className="relative z-10 p-10 rounded-xl max-w-xl backdrop-blur-sm
-    transition-all duration-500 hover:scale-105 hover:shadow-2xl"
-    style={{
-      background: "rgba(6,47,44,0.65)"
-    }}
-  >
-    <h1 className="text-3xl font-bold mb-4 transition-colors duration-300 hover:text-teal-300">
-      Child needs to go immediate medical surgery, Help.
-    </h1>
-
-    <p className="mb-6 text-gray-200">
-      A child needs immediate surgery. Your help can save a life.
-    </p>
-
-    <button
-      className="bg-teal-500 px-6 py-3 rounded-lg font-semibold
-      transition-all duration-300 transform
-      hover:bg-teal-400 hover:scale-110 hover:shadow-lg"
-    >
-      Urgent Donate
-    </button>
-  </div>
-</section>
-
-      {/* HELP OPTIONS */}
-      <section className="py-20 text-center">
-
-        <h2 className="text-3xl font-bold mb-4">How can you help us?</h2>
-
-        <p className="text-gray-300 mb-16">
-          You can support us by donating, volunteering your time,
-          or providing food supplies.
-        </p>
-
-        <div className="grid md:grid-cols-3 gap-12 px-10">
-
-          <div className="bg-[#083c38] p-8 rounded-xl hover:scale-105 transition">
-            <div className="text-5xl mb-4">💰</div>
-            <h3 className="text-xl font-semibold mb-2">Give donation</h3>
-            <p className="text-gray-400">
-              Your donation supports essential programs and helps
-              communities in need.
+      <main className="flex-1 py-16 md:py-24 bg-gray-100 dark:bg-gray-800">
+        <div className="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-3">
+          <div className="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <h3 className="text-2xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">Fast</h3>
+            <p className="text-gray-700 dark:text-gray-300">
+              Powered by Vite + React for instant reloads and top performance.
             </p>
           </div>
 
@@ -414,6 +364,7 @@ const Home = () => {
         </div>
 
       </section>
+
 
     </div>
   );

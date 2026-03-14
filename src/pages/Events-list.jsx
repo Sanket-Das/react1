@@ -209,39 +209,7 @@ const EventsList = () => {
       </section>
       {/* VOLUNTEER SECTION */}
 
-      <section
-        className="relative py-32 flex items-center justify-center text-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1593113630400-ea4288922497')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
-
-        {/* Content */}
-        <div className="relative max-w-2xl text-white px-6">
-
-          <h2 className="text-4xl font-bold mb-6">
-            Become a volunteer
-          </h2>
-
-          <p className="text-lg text-gray-200 mb-8">
-            Join our mission to make a positive impact! As a volunteer,
-            you'll work directly with communities, bring hope, and help
-            create lasting change.
-          </p>
-
-          <button className="bg-pink-500 hover:bg-pink-600 px-8 py-4 rounded-lg font-semibold">
-            Donate now
-          </button>
-
-        </div>
-
-      </section>
+      
 
 <Footer />
     </>
