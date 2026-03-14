@@ -1,10 +1,13 @@
 // src/pages/Home.jsx
 import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 // import { Link } from 'react-router-dom'; // optional — remove if no routing
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+      <Header/>
 
       <main className="flex-1 py-16 md:py-24 bg-gray-100 dark:bg-gray-800">
         <div className="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-3">
@@ -33,6 +36,7 @@ export default function Home() {
         </div>
       </main>
 
+      <Footer/>
     </div>
   );
 };

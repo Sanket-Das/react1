@@ -8,7 +8,7 @@ function ContactPage() {
       <section className="relative h-[250px] w-full">
 
         <img
-          src="/images/contact-bg.jpg"
+          src="https://images.unsplash.com/photo-1590650213165-c1fef80648c4"
           alt="Contact Banner"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -98,7 +98,7 @@ function ContactPage() {
           {/* RIGHT IMAGE */}
           <div className="hidden lg:block h-full">
             <img
-              src="/images/office.jpg"
+             src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200"
               className="w-full h-full object-cover rounded-xl"
               alt="office"
             />
