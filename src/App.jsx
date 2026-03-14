@@ -12,7 +12,7 @@ import CausesList from './pages/Causes-list';
 import CausesDetails from './pages/Causes-details';
 // import Contact from './pages/Contact';
 // import Events from './pages/Events';
-// import EventsList from './pages/Events-list';
+import EventsList from './pages/Events-list';
 // import EventsDetails from './pages/Events-details';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -31,7 +31,7 @@ function App() {
         <Route path="/causes-details" element={<CausesDetails />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
         {/* <Route path="/events" element={<Events />} /> */}
-        {/* <Route path="/events-list" element={<EventsList />} /> */}
+        <Route path="/events-list" element={<EventsList />} />
         {/* <Route path="/events-details" element={<EventsDetails />} /> */}
       </Routes>
       <Footer />
