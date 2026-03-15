@@ -124,10 +124,10 @@ export default function Header() {
         <div className="bg-black text-white px-8 py-4 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
             <img
-              src="https://endeavor-nextjs-pro.vercel.app/images/logo.svg"
+              src="/images/logo/logo.svg"
               alt="logo"
               className="h-12"
-            />
+            img/>
 
             <div>
               <h2 className="text-lg font-bold">ENDEAVOR</h2>
