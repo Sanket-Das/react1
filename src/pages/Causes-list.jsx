@@ -18,7 +18,7 @@ const causes = [
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74",
+    image: "../src/assets/sagnik.jpg",
     title: "Women Empowerment",
     description: "Supporting women through education programs."
   }
