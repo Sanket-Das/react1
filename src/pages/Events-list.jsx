@@ -211,9 +211,9 @@ const EventsList = () => {
 
       
 
-<Footer />
+
     </>
-  );
+  );  
 };
 
 export default EventsList;
