@@ -18,6 +18,7 @@ import person1 from "../assets/person1.jpg";
 import person2 from "../assets/person2.jpg";
 import person3 from "../assets/person3.jpg";
 import person4 from "../assets/person4.jpg";
+import Card from "../components/card";
 
 export default function Home() {
 
@@ -35,6 +36,28 @@ export default function Home() {
       goal: "$90000"
     }
   ];
+
+  const cards = [
+    {
+      image: cause1,
+      title: "A Fundraising Gala for Education Equality and Access",
+      raised: "$40,000",
+      goal: "$65,200"
+    },
+    {
+      image: cause2,
+      title: "Supporting Women in Rural Communities",
+      raised: "$35,000",
+      goal: "$50,000"
+    },
+    {
+      image: cause3,
+      title: "Building Schools in Underserved Areas",
+      raised: "$50,000",
+      goal: "$75,000"
+    }
+  ];
+
 
   const [current, setCurrent] = useState(0);
 
@@ -331,111 +354,11 @@ index===i ? "bg-teal-400 scale-125" : "bg-gray-500"
 
     {/* CARDS */}
 
+
     <div className="grid md:grid-cols-3 gap-10 text-left">
+    {/* <Card cards={cards} /> */}
 
-
-      {/* CARD 1 */}
-
-      <div className="bg-[#112424] rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300">
-
-        <img
-          src={cause1}
-          className="w-full h-56 object-cover"
-        />
-
-        <div className="p-5">
-
-          <h3 className="font-semibold text-lg mb-4">
-            A Fundraising Gala for Education Equality and Access
-          </h3>
-
-          <div className="grid grid-cols-2 gap-4 border border-gray-600 rounded-lg p-3">
-
-            <div>
-              <p className="text-gray-400 text-sm">Raised</p>
-              <p className="text-teal-400 font-bold">$40,000</p>
-            </div>
-
-            <div>
-              <p className="text-gray-400 text-sm">Goal</p>
-              <p className="font-bold">$65,200</p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      {/* CARD 2 */}
-
-      <div className="bg-[#112424] rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300">
-
-        <img
-          src={cause2}
-          className="w-full h-56 object-cover"
-        />
-
-        <div className="p-5">
-
-          <h3 className="font-semibold text-lg mb-4">
-            Cancer Crowdfunding for little champ
-          </h3>
-
-          <div className="grid grid-cols-2 gap-4 border border-gray-600 rounded-lg p-3">
-
-            <div>
-              <p className="text-gray-400 text-sm">Raised</p>
-              <p className="text-teal-400 font-bold">$62,000</p>
-            </div>
-
-            <div>
-              <p className="text-gray-400 text-sm">Goal</p>
-              <p className="font-bold">$65,200</p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      {/* CARD 3 */}
-
-      <div className="bg-[#112424] rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300">
-
-        <img
-          src={cause3}
-          className="w-full h-56 object-cover"
-        />
-
-        <div className="p-5">
-
-          <h3 className="font-semibold text-lg mb-4">
-            Empowering Women and Girls Through Education Initiatives
-          </h3>
-
-          <div className="grid grid-cols-2 gap-4 border border-gray-600 rounded-lg p-3">
-
-            <div>
-              <p className="text-gray-400 text-sm">Raised</p>
-              <p className="text-teal-400 font-bold">$80,000</p>
-            </div>
-
-            <div>
-              <p className="text-gray-400 text-sm">Goal</p>
-              <p className="font-bold">$85,000</p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
+{cards.map((card)=>(<Card image={card.image} title={card.title} raised={card.raised} goal={card.goal} />))}
 
     </div>
 

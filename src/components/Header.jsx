@@ -106,6 +106,12 @@ export default function Header() {
             {/* <Link to="/docs" className="hover:opacity-80">
               Documentation
             </Link> */}
+            
+              <Link to="/about" className="hover:opacity-80 p-0">
+                About
+              </Link>
+
+
           </nav>
 
           <div className="flex items-center gap-4">
