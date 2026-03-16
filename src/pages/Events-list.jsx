@@ -209,9 +209,7 @@ const EventsList = () => {
       </section>
       {/* VOLUNTEER SECTION */}
 
-      
-
-<Footer />
+  
     </>
   );
 };
