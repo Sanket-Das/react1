@@ -5,38 +5,6 @@ export default function EventsDetails() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100">
 
-      {/* Top Navigation Bar (Teal like the site) */}
-      <nav className="bg-teal-500 text-white py-4 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-white rounded flex items-center justify-center text-teal-600 font-bold text-2xl">E</div>
-            <div>
-              <div className="font-bold text-xl">ENDEAVOR</div>
-              <div className="text-xs -mt-1">CHARITY FOUNDATION</div>
-            </div>
-          </div>
-
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-            <a href="#" className="hover:underline">Home</a>
-            <a href="#" className="hover:underline">Causes</a>
-            <a href="#" className="hover:underline">Events</a>
-            <a href="#" className="hover:underline">Blog</a>
-            <a href="#" className="hover:underline">Contact</a>
-            <a href="#" className="hover:underline">Documentation</a>
-          </div>
-
-          <div className="flex items-center gap-4 text-sm">
-            <div className="flex items-center gap-2">
-              <span>📧</span>
-              <span>info@endeavor.com</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span>📞</span>
-              <span>703 (123) 456</span>
-            </div>
-          </div>
-        </div>
-      </nav>
 
       {/* Hero Banner Section - Big image with overlay text */}
       <div className="relative h-[500px] md:h-[600px] bg-cover bg-center" 
