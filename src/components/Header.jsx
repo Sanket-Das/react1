@@ -124,9 +124,9 @@ export default function Header() {
         <div className="bg-black text-white px-8 py-4 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
             <img
-              src="https://endeavor-nextjs-pro.vercel.app/images/logo.svg"
+              src="src\assets\endeavourlogo.jpg"
               alt="logo"
-              className="h-12"
+              className="h-12 rounded-full"
             />
 
             <div>
@@ -139,14 +139,14 @@ export default function Header() {
             <div>
               <p className="text-gray-400 text-xs">Email us at</p>
               <p className="font-semibold hover:text-[#2e5ab8]">
-                info@endeavor.com
+                biswasnirmalya420@gmail.com
               </p>
             </div>
 
             <div>
               <p className="text-gray-400 text-xs">Call us now</p>
               <p className="font-semibold hover:text-[#2e5ab8]">
-                703 (123) 4567
+                9366467344
               </p>
             </div>
 
