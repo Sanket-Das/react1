@@ -18,7 +18,7 @@ const causes = [
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Samantha_Ruth_Prabhu_2022.jpg",
     title: "Women Empowerment",
     description: "Supporting women through education programs."
   }

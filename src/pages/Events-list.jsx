@@ -17,7 +17,7 @@ const EventsList = () => {
         }}
       >
         <div className="max-w-7xl mx-auto px-6">
-          <h1 className="text-white text-5xl font-bold">
+          <h1 className="text-black text-5xl font-bold">
             Event List
           </h1>
         </div>

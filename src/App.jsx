@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-// import About from './pages/About';
+import About from './pages/About';
 // import Blogs from './pages/Blogs';
 import BlogsList from './pages/Blogs-list';
 // import BlogsDetails from './pages/Blogs-details';
@@ -22,7 +22,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/about" element={<About />} />
         {/* <Route path="/blogs" element={<Blogs />} /> */}
         <Route path="/blogs-list" element={<BlogsList />} />
         {/* <Route path="/blogs-details" element={<BlogsDetails />} /> */}
@@ -33,10 +33,11 @@ function App() {
         {/* <Route path="/events" element={<Events />} /> */}
         <Route path="/events-list" element={<EventsList />} />
         <Route path="/events-details" element={<EventsDetails />} />
+        <Route path="*" element={<h1 className="text-center text-3xl mt-20">404 Not Found</h1>} />
       </Routes>
       <Footer />
     </Router>
   );
 }
 
-export default App
+export default App 
