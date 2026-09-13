@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom';
+import { useContext, useState } from 'react';
+import { AuthContext } from '../context/AuthContext';
 
 export default function Header() {
+  const { user, signOut } = useContext(AuthContext);
+  const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <>
       <div className="fixed top-0 left-0 w-full z-50">
@@ -117,13 +122,40 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <button className="p-1">☀️</button>
 
-            <button className="bg-[#FF6D61] px-4 py-1.5 rounded-md text-xs uppercase tracking-wider hover:opacity-80">
-              Sign In
-            </button>
+            {user ? (
+              <div className="relative">
+                <button 
+                  onClick={() => setShowDropdown(!showDropdown)}
+                  className="bg-teal-500 px-4 py-1.5 rounded-md text-xs uppercase tracking-wider hover:opacity-80 flex items-center gap-2"
+                >
+                  👤 {user.name}
+                </button>
+                
+                {showDropdown && (
+                  <div className="absolute right-0 top-full mt-2 bg-black text-white rounded shadow-lg w-32">
+                    <button
+                      onClick={() => {
+                        signOut();
+                        setShowDropdown(false);
+                      }}
+                      className="block w-full text-left px-4 py-2 hover:bg-gray-700 text-xs"
+                    >
+                      Sign Out
+                    </button>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <>
+                <Link to="/signin" className="bg-[#FF6D61] px-4 py-1.5 rounded-md text-xs uppercase tracking-wider hover:opacity-80 inline-block">
+                  Sign In
+                </Link>
 
-            <button className="bg-black px-4 py-1.5 rounded-md text-xs uppercase tracking-wider hover:opacity-80">
-              Sign Up
-            </button>
+                <Link to="/signup" className="bg-black px-4 py-1.5 rounded-md text-xs uppercase tracking-wider hover:opacity-80 border border-white inline-block">
+                  Sign Up
+                </Link>
+              </>
+            )}
           </div>
         </div>
 

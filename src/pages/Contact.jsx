@@ -4,103 +4,27 @@ function ContactPage() {
   return (
     <div>
 
-      {/* CONTACT HERO */}
-      <section className="relative h-[250px] w-full">
+      {/* CONTACT SECTION WITH IMAGE */}
+      <section className="bg-[#0b1c1c] text-white py-20 px-6 lg:px-24">
 
-        <img
-          src="https://images.unsplash.com/photo-1590650213165-c1fef80648c4"
-          alt="Contact Banner"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
 
-        <div className="absolute inset-0 bg-black/40"></div>
-
-        <div className="relative flex items-center h-full max-w-7xl mx-auto px-6 lg:px-20">
-          <h1 className="text-white text-5xl font-semibold">
-            Contact
-          </h1>
-        </div>
-
-      </section>
-
-
-
-      {/* CONSULTATION FORM */}
-      <section className="bg-[#022c22] py-20">
-
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 px-6 lg:px-20 items-center">
-
-          {/* LEFT FORM */}
-          <div className="text-white">
-
-            <h2 className="text-4xl font-bold mb-10 leading-tight">
-              Get online <br /> consultation
-            </h2>
-
-            <form className="grid md:grid-cols-2 gap-6">
-
-              <div>
-                <label className="block mb-2 text-sm">First Name*</label>
-                <input
-                  type="text"
-                  className="w-full border border-gray-600 bg-transparent rounded-lg px-4 py-3 focus:outline-none focus:border-teal-400"
-                />
-              </div>
-
-              <div>
-                <label className="block mb-2 text-sm">Last Name*</label>
-                <input
-                  type="text"
-                  className="w-full border border-gray-600 bg-transparent rounded-lg px-4 py-3 focus:outline-none focus:border-teal-400"
-                />
-              </div>
-
-              <div>
-                <label className="block mb-2 text-sm">Email address*</label>
-                <input
-                  type="email"
-                  className="w-full border border-gray-600 bg-transparent rounded-lg px-4 py-3 focus:outline-none focus:border-teal-400"
-                />
-              </div>
-
-              <div>
-                <label className="block mb-2 text-sm">Specialist*</label>
-                <select className="w-full border border-gray-600 bg-transparent rounded-lg px-4 py-3 focus:outline-none focus:border-teal-400">
-                  <option>Choose a specialist</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block mb-2 text-sm">Date*</label>
-                <input
-                  type="date"
-                  className="w-full border border-gray-600 bg-transparent rounded-lg px-4 py-3 focus:outline-none focus:border-teal-400"
-                />
-              </div>
-
-              <div>
-                <label className="block mb-2 text-sm">Time*</label>
-                <input
-                  type="time"
-                  className="w-full border border-gray-600 bg-transparent rounded-lg px-4 py-3 focus:outline-none focus:border-teal-400"
-                />
-              </div>
-
-            </form>
-
-            <button className="mt-10 bg-teal-500 hover:bg-teal-600 px-8 py-4 rounded-lg font-semibold transition">
-              Make an appointment
-            </button>
-
+          {/* LEFT - CONTACT HEADER */}
+          <div>
+            <h1 className="text-5xl lg:text-6xl font-bold mb-4">
+              Contact Us
+            </h1>
+            <p className="text-gray-300 text-lg">
+              Get in touch with us and let's make a difference together. We're here to help and answer any questions you might have.
+            </p>
           </div>
 
-
-          {/* RIGHT IMAGE */}
-          <div className="hidden lg:block h-full">
+          {/* RIGHT - IMAGE */}
+          <div className="hidden lg:block">
             <img
-             src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200"
-              className="w-full h-full object-cover rounded-xl"
-              alt="office"
+              src="https://images.unsplash.com/photo-1648572182183-17dc80760033?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Contact"
+              className="w-full h-auto rounded-xl shadow-lg"
             />
           </div>
 
@@ -111,46 +35,44 @@ function ContactPage() {
 
 
       {/* OFFICE ADDRESS SECTION */}
-      <section className="bg-teal-500 py-20 px-6 lg:px-24">
+      <section className="bg-[#0b1c1c] py-20 px-6 lg:px-24">
 
-        <div className="max-w-7xl mx-auto text-white">
+        <div className="max-w-7xl mx-auto">
 
           {/* Pune Office */}
-          <div className="grid md:grid-cols-3 gap-10 items-start">
+          <div className="grid md:grid-cols-3 gap-8 items-start mb-12 bg-gradient-to-r from-teal-500/20 to-cyan-500/20 p-8 rounded-xl border border-teal-500/40">
 
-            <h2 className="text-4xl font-semibold">
-              Pune head office
+            <h2 className="text-3xl lg:text-4xl font-bold text-teal-400">
+              Agartala head office
             </h2>
 
-            <p className="text-lg leading-relaxed">
-              3502 Marcus Street Geraldine <br />
-              Zip code 35974
+            <p className="text-white text-lg leading-relaxed font-semibold">
+              Joynagar,A.K Road <br />
+              <span className="text-gray-300 text-base font-normal">pin code 799001</span>
             </p>
 
-            <p className="text-lg leading-relaxed">
+            <p className="text-white text-lg leading-relaxed font-semibold">
               headoffice@endeavor.com <br />
-              Call: <span className="font-semibold">731-621-5503</span>
+              <span className="text-teal-400 font-bold">9366467344</span>
             </p>
 
           </div>
 
-          <div className="border-t border-white/40 my-12"></div>
-
           {/* Bengaluru Office */}
-          <div className="grid md:grid-cols-3 gap-10 items-start">
+          <div className="grid md:grid-cols-3 gap-8 items-start bg-gradient-to-r from-cyan-500/20 to-teal-500/20 p-8 rounded-xl border border-cyan-500/40">
 
-            <h2 className="text-4xl font-semibold">
-              Bengaluru office
+            <h2 className="text-3xl lg:text-4xl font-bold text-cyan-400">
+              Kolkata office
             </h2>
 
-            <p className="text-lg leading-relaxed">
-              4292 Mapleview Drive Greenfield <br />
-              Zip code 38230
+            <p className="text-white text-lg leading-relaxed font-semibold">
+              Near Salt Lake Stadium <br />
+              <span className="text-gray-300 text-base font-normal">pin code 700064</span>
             </p>
 
-            <p className="text-lg leading-relaxed">
+            <p className="text-white text-lg leading-relaxed font-semibold">
               office@endeavor.com <br />
-              Call <span className="font-semibold">731-235-7993</span>
+              <span className="text-cyan-400 font-bold">9366467344</span>
             </p>
 
           </div>

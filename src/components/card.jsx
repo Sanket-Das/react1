@@ -1,6 +1,6 @@
 
 export default function Card(props) {
-    const { image, title, raised, goal } = props;
+    const { image, title, raised, goal, onDonate } = props;
     // const { cards } = props;
 
   return (
@@ -18,7 +18,7 @@ export default function Card(props) {
             {title}
           </h3>
 
-          <div className="grid grid-cols-2 gap-4 border border-gray-600 rounded-lg p-3">
+          <div className="grid grid-cols-2 gap-4 border border-gray-600 rounded-lg p-3 mb-4">
 
             <div>
               <p className="text-gray-400 text-sm">Raised</p>
@@ -31,6 +31,13 @@ export default function Card(props) {
             </div>
 
           </div>
+
+          <button 
+            onClick={onDonate}
+            className="w-full bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-semibold transition cursor-pointer"
+          >
+            Donate now
+          </button>
 
         </div>
 

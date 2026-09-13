@@ -2,59 +2,66 @@ import React, { useState, useEffect } from "react";
 const blogs = [
   {
     id: 1,
-    title: "The Universe is all of time and space and its contents.",
-    author: "Mark Freeman",
-    date: "MAY 23 2025",
-    img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    title: "Bringing Clean Water to Rural Villages in Rajasthan",
+    author: "Priya Sharma",
+    date: "APR 15 2026",
+    img: "https://pixabay.com/images/download/judam-boy-1006213_1920.jpg",
   },
   {
     id: 2,
-    title: "The work is top-notch and I consistently all my...",
-    author: "Gairik Pal",
-    date: "JUN 08 2025",
-    img: "https://images.unsplash.com/photo-1556761175-4b46a572b786",
+    title: "Education for Underprivileged Children in Mumbai Slums",
+    author: "Rahul Verma",
+    date: "MAR 28 2026",
+    img: "https://images.unsplash.com/photo-1628277612964-556f99127102?auto=format&fit=crop&w=800&q=60",
   },
   {
     id: 3,
-    title: "Grow my business through organic search and marketing...",
-    author: "Sam Altman",
-    date: "JUL 12 2025",
-    img: "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+    title: "Healthcare Camp Success in Backward Districts of Bihar",
+    author: "Dr. Anjali Gupta",
+    date: "MAR 10 2026",
+    img: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=60",
   },
   {
     id: 4,
-    title: "Tailored to your audience to enhance brand awareness...",
-    author: "Harry Cook",
-    date: "AUG 10 2025",
-    img: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b",
+    title: "Empowering Women Through Self-Help Groups in Tamil Nadu",
+    author: "Lakshmi Narayanan",
+    date: "FEB 22 2026",
+    img: "https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?auto=format&fit=crop&w=800&q=60",
   },
   {
     id: 5,
-    title: "Undercover valuable insights for strategic business decisions...",
-    author: "Adolf Williamson",
-    date: "OCT 02 2025",
-    img: "https://images.unsplash.com/photo-1579154204601-01588f351e67",
+    title: "Tree Plantation Drive: Greening the Forests of Madhya Pradesh",
+    author: "Vikram Singh",
+    date: "FEB 05 2026",
+    img: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=60",
   },
   {
     id: 6,
-    title: "Drive growth and achieve your business objectives effectively...",
-    author: "Arther John",
-    date: "DEC 01 2025",
-    img: "https://images.unsplash.com/photo-1509062522246-3755977927d7",
+    title: "Feeding the Hungry: Our Mid-Day Meal Initiative in UP",
+    author: "Mohammad Ali",
+    date: "JAN 18 2026",
+    img: "https://images.unsplash.com/photo-1605433246452-82d9dc1a7a0b?auto=format&fit=crop&w=800&q=60",
   },
   {
     id: 7,
-    title: "Free access to your global partner network and marketplace...",
-    author: "Jos Taylor",
-    date: "JAN 12 2026",
-    img: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    title: "Digital Literacy Program for Rural Schools in Karnataka",
+    author: "Sunita Rao",
+    date: "JAN 05 2026",
+    img: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=800&q=60",
   },
   {
     id: 8,
-    title: "Define each stage of work to see whats important for you...",
-    author: "Zayn Brook",
-    date: "FEB 20 2026",
-    img: "https://images.unsplash.com/photo-1559136555-9303baea8ebd",
+    title: "Disaster Relief Efforts During Monsoon in Assam",
+    author: "Rohit Das",
+    date: "DEC 20 2025",
+    img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=60",
+  },
+  {
+    id: 9,
+    title: "Building Homes for the Homeless in Delhi's JJ Colonies",
+    author: "Arvind Kumar",
+    date: "DEC 08 2025",
+    img: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=60",
   },
 ];
 const RevealOnScroll = ({ children }) => {
@@ -76,7 +83,7 @@ const RevealOnScroll = ({ children }) => {
   return (
     <div
       ref={ref}
-      className={`transition-all duration-1000 transform ${
+      className={`transition-all duration-500 ease-out transform ${
         isVisible 
           ? "opacity-100 translate-y-0 scale-100" 
           : "opacity-0 translate-y-10 scale-95"
@@ -114,14 +121,14 @@ function BlogList() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         {blogs.map((blog) => (
           <RevealOnScroll key={blog.id}> {/* Wrap the card here */}
-            <div className="group bg-[#111827] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500">
+            <div className="group bg-[#111827] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 ease-out">
               
               {/* Image */}
               <div className="overflow-hidden">
                 <img
                   src={blog.img}
                   alt={blog.title}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition duration-700"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition duration-300 ease-out"
                 />
               </div>
 
@@ -135,9 +142,9 @@ function BlogList() {
                   {blog.title}
                 </h2>
 
-                <button className="mt-4 text-emerald-400 font-medium flex items-center gap-1 group/btn transition-all duration-300 hover:text-emerald-300">
+                <button className="mt-4 text-emerald-400 font-medium flex items-center gap-1 group/btn transition-all duration-200 ease-out hover:text-emerald-300">
                   Read More 
-                  <span className="transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
+                  <span className="transition-transform duration-200 ease-out group-hover/btn:translate-x-1">→</span>
                 </button>
               </div>
             </div>

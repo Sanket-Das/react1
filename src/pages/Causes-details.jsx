@@ -31,19 +31,19 @@ export default function EventDetails() {
 
           <div className="flex justify-between items-center text-sm text-gray-300 mb-6">
             <span className="bg-gray-700 px-3 py-1 rounded">Education</span>
-            <span>Jan 10, 2025</span>
+            <span>Jan 10, 2026</span>
           </div>
 
           {/* Raised / Goal */}
           <div className="flex gap-6 mb-10">
             <div className="border border-gray-600 rounded-lg p-4 w-40">
               <p className="text-gray-400 text-sm">Raised</p>
-              <p className="text-xl font-semibold">$40,000</p>
+              <p className="text-xl font-semibold">Rs 40,00000</p>
             </div>
 
             <div className="border border-gray-600 rounded-lg p-4 w-40">
               <p className="text-gray-400 text-sm">Goal</p>
-              <p className="text-xl font-semibold">$65,200</p>
+              <p className="text-xl font-semibold">Rs 65,20000</p>
             </div>
           </div>
 

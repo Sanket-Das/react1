@@ -7,26 +7,10 @@ export default function EventsDetails() {
 
 
       {/* Hero Banner Section - Big image with overlay text */}
-      <div className="relative h-[500px] md:h-[600px] bg-cover bg-center" 
-           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1582213782179-1c2a5f8b8f6f?auto=format&fit=crop&q=80')" }}>
-        
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
-
-        <div className="absolute inset-0 flex items-center justify-center text-center px-6">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
-              Become a volunteer
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">
-              Join our mission to make a positive impact! As a volunteer, you'll work directly with communities, bring hope, and help create lasting change.
-            </p>
-
-            <button className="mt-10 bg-pink-500 hover:bg-pink-600 text-white font-semibold text-lg px-10 py-4 rounded-lg transition">
-              Donate now
-            </button>
-          </div>
-        </div>
+      <div className="absolute inset-0"></div>
+        <div className="rounded-lg overflow-hidden mb-8">
+         <img src="src\assets\kids-playing-soccer-football.jpg" alt="" className="w-full object-cover"/>
+       
       </div>
 
       {/* Main Content Area */}
@@ -59,7 +43,7 @@ export default function EventsDetails() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Location</p>
-                  <p className="font-semibold">New York, USA</p>
+                  <p className="font-semibold">Agartala, Tripura, India</p>
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Organized by</p>
@@ -88,7 +72,7 @@ export default function EventsDetails() {
 
           <div>
             <p className="font-semibold mb-3">Endeavor Head Office</p>
-            <p className="text-sm text-gray-400">134, Cornish Building, Some<br />Near by area, New York</p>
+            <p className="text-sm text-gray-400">134, Cornish Building, Some<br />Near by area, Agartala</p>
           </div>
 
           <div>

@@ -19,21 +19,23 @@ import person2 from "../assets/person2.jpg";
 import person3 from "../assets/person3.jpg";
 import person4 from "../assets/person4.jpg";
 import Card from "../components/card";
+import DonateModal from "../components/DonateModal";
 
 export default function Home() {
+  const [isDonateOpen, setIsDonateOpen] = useState(false);
 
   const slides = [
     {
       image: slide1,
       title: "Helping African Mothers",
-      raised: "$70000",
-      goal: "$95000"
+      raised: "Rs 7000000",
+      goal: "Rs 9500000"
     },
     {
       image: slide2,
       title: "Lending a Hand to African Moms",
-      raised: "$65360",
-      goal: "$90000"
+      raised: "Rs 6536000",
+      goal: "Rs 9000000"
     }
   ];
 
@@ -41,20 +43,20 @@ export default function Home() {
     {
       image: cause1,
       title: "A Fundraising Gala for Education Equality and Access",
-      raised: "$40,000",
-      goal: "$65,200"
+      raised: "Rs 4000000",
+      goal: "Rs 6520000"
     },
     {
       image: cause2,
       title: "Supporting Women in Rural Communities",
-      raised: "$35,000",
-      goal: "$50,000"
+      raised: "Rs 35,0000",
+      goal: "Rs 50,00000"
     },
     {
       image: cause3,
       title: "Building Schools in Underserved Areas",
-      raised: "$50,000",
-      goal: "$75,000"
+      raised: "Rs 50,00000",
+      goal: "Rs 75,00000"
     }
   ];
 
@@ -185,6 +187,7 @@ index===i ? "bg-teal-400 scale-125" : "bg-gray-500"
     
 
     <>
+      <DonateModal isOpen={isDonateOpen} onClose={() => setIsDonateOpen(false)} />
       {/* HERO SECTION */}
 
       <section className="relative w-full h-[85vh] overflow-hidden">
@@ -227,7 +230,10 @@ index===i ? "bg-teal-400 scale-125" : "bg-gray-500"
 
             </div>
 
-            <button className="mt-6 w-full bg-pink-500 hover:bg-pink-600 p-3 rounded-lg font-semibold">
+            <button 
+              onClick={() => setIsDonateOpen(true)}
+              className="mt-6 w-full bg-pink-500 hover:bg-pink-600 p-3 rounded-lg font-semibold cursor-pointer"
+            >
               Donate now
             </button>
 
@@ -358,7 +364,7 @@ index===i ? "bg-teal-400 scale-125" : "bg-gray-500"
     <div className="grid md:grid-cols-3 gap-10 text-left">
     {/* <Card cards={cards} /> */}
 
-{cards.map((card)=>(<Card image={card.image} title={card.title} raised={card.raised} goal={card.goal} />))}
+{cards.map((card)=>(<Card image={card.image} title={card.title} raised={card.raised} goal={card.goal} onDonate={() => setIsDonateOpen(true)} />))}
 
     </div>
 
@@ -546,7 +552,10 @@ index===i ? "bg-teal-400 scale-125" : "bg-gray-500"
 
     <div className="flex justify-center">
 
-      <button className="bg-gradient-to-r from-teal-400 to-cyan-400 text-white px-8 py-3 rounded-lg font-semibold shadow-lg transition duration-300 hover:scale-110 hover:shadow-teal-400/50">
+      <button 
+        onClick={() => setIsDonateOpen(true)}
+        className="bg-gradient-to-r from-teal-400 to-cyan-400 text-white px-8 py-3 rounded-lg font-semibold shadow-lg transition duration-300 hover:scale-110 hover:shadow-teal-400/50 cursor-pointer"
+      >
 
         Urgent donate
 
